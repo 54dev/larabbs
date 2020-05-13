@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6e1a9ff9-b6ce-460a-b0ca-d8e122531f60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Handlers/ImageUploadHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Handlers/ImageUploadHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +155,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589380622222</updated>
-      <workItem from="1589380623867" duration="10418000" />
+      <workItem from="1589380623867" duration="10989000" />
     </task>
     <servers />
   </component>
@@ -164,9 +167,9 @@
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>
     <state x="3144" y="610" key="NewPhpFileDialog/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589393258327" />
-    <state x="2984" y="436" width="683" height="486" key="find.popup" timestamp="1589392472250">
+    <state x="2984" y="436" width="683" height="486" key="find.popup" timestamp="1589394804593">
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>
-    <state x="2984" y="436" width="683" height="486" key="find.popup/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589392472250" />
+    <state x="2984" y="436" width="683" height="486" key="find.popup/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589394804593" />
   </component>
 </project>

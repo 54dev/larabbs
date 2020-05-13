@@ -27,8 +27,8 @@
           {{ Auth::user()->name }}
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="">个人中心</a>
-            <a class="dropdown-item" href="">编辑资料</a>
+            <a class="dropdown-item" href="{{ Route('users.show', Auth::id()) }}">个人中心</a>
+            <a class="dropdown-item" href="{{ Route('users.edit', Auth::id()) }}">编辑资料</a>
             <div class="dropdown-divider-divider">
             </div>
             <a class="dropdown-item" id="logout" href="@">

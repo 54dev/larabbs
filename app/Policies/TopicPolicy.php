@@ -4,6 +4,7 @@ namespace App\Policies;
 
 use App\Models\User;
 use App\Models\Topic;
+use Illuminate\Support\Facades\Log;
 
 class TopicPolicy extends Policy
 {

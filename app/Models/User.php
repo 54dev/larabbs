@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
+use Illuminate\Support\Facades\Log;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
@@ -45,6 +46,6 @@ class User extends Authenticatable implements MustVerifyEmailContract
 
     public function isAuthorOf($model)
     {
-        return $this->id = $model->user_id;
+        return $this->id == $model->user_id;
     }
 }

@@ -36,7 +36,7 @@
             <div class="dropdown-divider-divider">
             </div>
             <a class="dropdown-item" id="logout" href="@">
-              <form action="{{ Route('logout') }}" method="POST">
+              <form action="{{ Route('logout') }}" method="POST" onsubmit="return confirm('are you sure');">
                 {{ csrf_field() }}
                 <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
               </form>

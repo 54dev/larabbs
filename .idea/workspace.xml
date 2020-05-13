@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e1a9ff9-b6ce-460a-b0ca-d8e122531f60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589380622222</updated>
-      <workItem from="1589380623867" duration="16112000" />
+      <workItem from="1589380623867" duration="16473000" />
     </task>
     <servers />
   </component>
@@ -167,10 +166,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3144" y="610" key="NewPhpFileDialog" timestamp="1589398005116">
+    <state x="3144" y="610" key="NewPhpFileDialog" timestamp="1589400613970">
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>
-    <state x="3144" y="610" key="NewPhpFileDialog/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589398005116" />
+    <state x="3144" y="610" key="NewPhpFileDialog/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589400613970" />
     <state x="2984" y="436" width="683" height="486" key="find.popup" timestamp="1589394804593">
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>

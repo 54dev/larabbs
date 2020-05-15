@@ -54,6 +54,9 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
 
             //post topic
             Route::resource('topics','TopicsController')->only(['store','update','destroy']);
+
+            // post reply
+            Route::post('topics/{topic}/replies', 'RepliesController@store')->name('topics.replies.store');
         });
     });
 

@@ -14,8 +14,8 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $response = $this->json('GET', '/api/v1/topics/');
 
-        $response->assertStatus(200);
+        $response->assertStatus(200)->assertJsonFragment(['data','meta']);
     }
 }

@@ -57,6 +57,8 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
 
             // post reply
             Route::post('topics/{topic}/replies', 'RepliesController@store')->name('topics.replies.store');
+            // delete reply
+            Route::delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')->name('topics.replies.destroy');
         });
     });
 

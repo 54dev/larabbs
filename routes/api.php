@@ -47,6 +47,7 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
         Route::patch('user/read/notifications', 'NotificationsController@read')->name('user.notifications.read');
         Route::get('user/permissions', 'PermissionsController@index')->name('user.permissions.index');
         Route::get('links','LinksController@index')->name('links.index');
+        Route::get('actived/users','UsersController@activedIndex')->name('actived.users.index');
 
 
         // login

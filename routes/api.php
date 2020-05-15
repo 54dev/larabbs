@@ -38,6 +38,7 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
         // guest
         Route::get('/users/{user}', 'UsersController@show')->name('users.show');
         Route::get('categories','CategoriesController@index')->name('categories.index');
+        Route::get('users/{user}/topics', 'TopicsController@userIndex')->name('users.topics.index');
         Route::resource('topics', 'TopicsController')->only(['index','show']);
 
         // login

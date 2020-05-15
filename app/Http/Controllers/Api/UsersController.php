@@ -37,7 +37,6 @@ class UsersController extends Controller
 
     public function update(UserRequest $request)
     {
-        // TODO fix bug
         $user = $request->user();
         $attributes = $request->only(['name','email','introduction']);
 

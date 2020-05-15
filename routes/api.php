@@ -40,6 +40,8 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
         Route::get('categories','CategoriesController@index')->name('categories.index');
         Route::get('users/{user}/topics', 'TopicsController@userIndex')->name('users.topics.index');
         Route::resource('topics', 'TopicsController')->only(['index','show']);
+        Route::get('topics/{topic}/replies', 'RepliesController@index')->name('topics.replies.index');
+        Route::get('users/{user}/replies', 'RepliesController@userIndex')->name('users.replies.index');
 
         // login
         Route::middleware('auth:api')->group(function (){

@@ -23,7 +23,6 @@ class UserRequest extends FormRequest
                 break;
             case 'PATCH':
                 $userId = auth('api')->id();
-//                dd($this->);
                 return [
                     'name' => 'between:3,25|regex:/^[A-Za-z0-9\-\_]+$/|unique:users,name,' .$userId,
                     'email'=>'email|unique:users,email,'.$userId,

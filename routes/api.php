@@ -36,6 +36,7 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
     Route::middleware('throttle:' . config('api.rate_limits.access'))->group(function () {
 
         Route::get('/users/{user}', 'UsersController@show')->name('users.show');
+        Route::get('categories','CategoriesController@index')->name('categories.index');
 
         Route::middleware('auth:api')->group(function (){
             Route::get('user','UsersController@me')->name('user.show');

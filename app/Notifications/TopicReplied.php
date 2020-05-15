@@ -7,6 +7,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use App\Models\Reply;
+use JPush\PushPayload;
+use App\Notifications\Channels\JpushChannel;
 
 class TopicReplied extends Notification implements ShouldQueue
 {
@@ -32,7 +34,7 @@ class TopicReplied extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        return ['database','mail'];
+        return ['database', JpushChannel::class];
     }
 
     public function toMail($notifiable)
@@ -65,6 +67,14 @@ class TopicReplied extends Notification implements ShouldQueue
             'topic_id' => $topic->id,
             'topic_title' => $topic->title
         ];
+    }
+
+    public function toJPush($notifiable, PushPayload $payload): PushPayload
+    {
+        return $payload
+                ->setPlatform('all')
+                ->addRegistrationId($notifiable->registration_id)
+                ->setNotificationAlert(strip_tags($this->reply->content));
     }
 
     /**

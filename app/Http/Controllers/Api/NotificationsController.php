@@ -21,4 +21,10 @@ class NotificationsController extends Controller
             'unread_count' => auth('api')->user()->nofitication_count,
         ]);
     }
+
+    public function read(Request $request)
+    {
+        auth('api')->user()->markAsRead();
+        return response(null, 204);
+    }
 }

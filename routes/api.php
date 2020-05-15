@@ -43,6 +43,7 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function(){
         Route::get('topics/{topic}/replies', 'RepliesController@index')->name('topics.replies.index');
         Route::get('users/{user}/replies', 'RepliesController@userIndex')->name('users.replies.index');
         Route::get('notifications','NotificationsController@index')->name('notifications.index');
+        Route::get('notifications/stats','NotificationsController@stats')->name('notifications.stats');
 
         // login
         Route::middleware('auth:api')->group(function (){

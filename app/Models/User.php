@@ -50,7 +50,7 @@ class User extends Authenticatable implements MustVerifyEmailContract,JWTSubject
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token','weixin_openid','weixin_unionid'
     ];
 
     /**

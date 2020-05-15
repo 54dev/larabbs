@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e1a9ff9-b6ce-460a-b0ca-d8e122531f60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Api/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Api/UserRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589380622222</updated>
-      <workItem from="1589380623867" duration="58350000" />
+      <workItem from="1589380623867" duration="58936000" />
     </task>
     <servers />
   </component>
@@ -195,6 +193,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="3077" y="189" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589552357559">
+      <screen x="1440" y="23" width="2560" height="1417" />
+    </state>
+    <state x="3077" y="189" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589552357559" />
+    <state x="3063" y="441" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589552392172">
+      <screen x="1440" y="23" width="2560" height="1417" />
+    </state>
+    <state x="3063" y="441" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589552392172" />
     <state x="3144" y="610" key="NewPhpFileDialog" timestamp="1589423400677">
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>

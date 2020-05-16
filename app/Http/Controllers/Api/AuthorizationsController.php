@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Http\Requests\Api\SocialAuthorizationRequest;
 use App\Http\Requests\Api\AuthorizationRequest;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\Api\WeappAuthorizationRequest;
 
 class AuthorizationsController extends Controller
 {
@@ -94,5 +95,50 @@ class AuthorizationsController extends Controller
     {
         auth('api')->logout();
         return response(null,204);
+    }
+    /*
+     * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx3d11fc1005398e96&redirect_uri=http://larabbs.test&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect
+     */
+    public function weappStore(WeappAuthorizationRequest $request)
+    {
+        $code = $request->code;
+
+        $miniProgram = \EasyWeChat::miniProgram();
+        $data = $miniProgram->auth->session($code);
+
+        if(isset($data['errcode'])){
+            throw new AuthenticationException('code 不正确');
+        }
+
+        $user = User::where('weapp_openid', $data['openid'])->first();
+
+        $attributes['weixin_session_key'] = $data['session_key'];
+
+        if(!$user){
+            if(!$request->username){
+                throw new AuthenticationException('用户不存在');
+            }
+
+            $username = $request->username;
+
+            filter_var($user, FILTER_VALIDATE_EMAIL)?
+                $credentials['email'] = $username:
+                $credentials['phone'] = $username;
+
+            $credentials['password'] = $request->password;
+
+            if(!auth('api')->once($credentials)){
+                throw new AuthenticationException('用户名或者密码错误');
+            }
+
+            $user = auth('api')->getUser();
+            $attributes['weapp_openid'] = $data['openid'];
+        }
+
+        $user->update($attributes);
+
+        $token =  auth('api')->login($user);
+
+        return $this->responseWithToken($token)->setStatusCode(201);
     }
 }

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1a9ff9-b6ce-460a-b0ca-d8e122531f60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/larabbs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthorizationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthorizationsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/wechat.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/wechat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +174,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/images/topics" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -209,6 +210,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="3077" y="189" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589552357559">
       <screen x="1440" y="23" width="2560" height="1417" />
@@ -230,13 +234,13 @@
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>
     <state x="2984" y="301" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589407126341" />
-    <state x="2984" y="436" width="683" height="486" key="find.popup" timestamp="1589556600364">
+    <state x="2984" y="436" width="683" height="486" key="find.popup" timestamp="1589649095344">
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>
-    <state x="2984" y="436" width="683" height="486" key="find.popup/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589556600364" />
-    <state x="2990" y="322" width="670" height="676" key="search.everywhere.popup" timestamp="1589423457899">
+    <state x="2984" y="436" width="683" height="486" key="find.popup/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589649095344" />
+    <state x="2990" y="322" width="670" height="676" key="search.everywhere.popup" timestamp="1589647095091">
       <screen x="1440" y="23" width="2560" height="1417" />
     </state>
-    <state x="2990" y="322" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589423457899" />
+    <state x="2990" y="322" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1589647095091" />
   </component>
 </project>

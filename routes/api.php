@@ -27,6 +27,8 @@ Route::prefix('v1')->namespace('Api')->middleware('change-locale')->name('api.v1
                 ->name('socials.authorizations.store');
         //登录
         Route::post('authorizations', 'AuthorizationsController@store')->name('api.authorizations.store');
+        //mini program login
+        Route::post('weapp/authorizations', 'AuthorizationsController@weappStore')->name('weapp.authorizations.store');
         // refresh token
         Route::put('authorizations/current', 'AuthorizationsController@update')->name('authorizations.update');
         // del token
